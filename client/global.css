@@ -18,7 +18,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 267 91% 56%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -27,17 +27,17 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 196 100% 50%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 267 91% 56%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -103,4 +103,27 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom animations and utilities for smooth scrolling */
+@layer utilities {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom gradient backgrounds */
+.gradient-hero {
+  background: linear-gradient(
+    135deg,
+    #9333ea 0%,
+    #f15bb5 25%,
+    #00bbf9 50%,
+    #00f5d4 75%,
+    #fee440 100%
+  );
+}
+
+.gradient-section {
+  background: linear-gradient(45deg, #00bbf9, #00f5d4);
 }

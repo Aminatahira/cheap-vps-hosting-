@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom brand colors for ARZ Host
+        brand: {
+          purple: "#9333EA",
+          hotpink: "#F15BB5",
+          aqua: "#00BBF9",
+          mint: "#00F5D4",
+          lemon: "#FEE440",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
